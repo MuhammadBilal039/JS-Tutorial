@@ -7,6 +7,22 @@
   </head>
   <body>
     <h1>Simple Calculator for additon of two numbers</h1>
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
+    <script>
+      var englishMarks = +prompt('Enter your english marks:');
+      var urduMarks = +prompt('Enter your urdu marks:');
+      var computerMarks = +prompt('Enter your computer marks:');
+      var physicsMarks = +prompt('Enter your physics marks:');
+      var mathsMarks = +prompt('Enter your maths marks:');
+      
+      var totalMarks = 500;
+      var obtainedMarks =
+        englishMarks + urduMarks + computerMarks + physicsMarks + mathsMarks;
+
+      var percentage = (obtainedMarks / totalMarks) * 100;
+
+      console.log('Total Marks: ', obtainedMarks);
+      console.log('Your Percentage:', percentage, '%');
+    </script>
   </body>
 </html>
