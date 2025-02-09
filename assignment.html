@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Assignment</title>
+  </head>
+  <body>
+    <script>
+      var userName = prompt('Enter Your Full Name');
+      var rollNumber = prompt('Enter Your Roll Number');
+      var phoneNumber = prompt('Enter Your Phone Number');
+      var email = prompt('Enter Your Email');
+
+      var mathsMarks = +prompt('Enter Your Maths Marks');
+      var physicsMarks = +prompt('Enter Your Physics Marks');
+      var computerMarks = +prompt('Enter Your Computer Science Marks');
+      var chemistryMarks = +prompt('Enter Your Chemistry Marks');
+      var biologyMarks = +prompt('Enter Your Biology Marks');
+
+      var totalMarks = 500;
+      var obtainedMarks =
+        mathsMarks +
+        physicsMarks +
+        computerMarks +
+        chemistryMarks +
+        biologyMarks;
+
+      var percentage = (obtainedMarks / totalMarks) * 100;
+
+      document.write('Your Name: ', userName, '<br/>');
+      document.write('Your Roll Number: ', rollNumber, '<br/>');
+      document.write('Your Phone Number: ', phoneNumber, '<br/>');
+      document.write('Your Email: ', email, '<br/>');
+      document.write(
+        'Your Maths Marks is: ',
+        mathsMarks,
+        ' Out of 100',
+        '<br/>'
+      );
+      document.write(
+        'Your Physics Marks is: ',
+        physicsMarks,
+        ' Out of 100',
+        '<br/>'
+      );
+      document.write(
+        'Your Computer Science Marks is: ',
+        computerMarks,
+        ' Out of 100',
+        '<br/>'
+      );
+      document.write(
+        'Your Chemistry Marks is: ',
+        chemistryMarks,
+        ' Out of 100',
+        '<br/>'
+      );
+      document.write(
+        'Your Biology Marks is: ',
+        biologyMarks,
+        ' Out of 100',
+        '<br/>'
+      );
+      document.write('Total Marks: ', totalMarks, '<br/>');
+      document.write('Your Obtained Marks: ', obtainedMarks, '<br/>');
+      document.write('Your Percentage: ', percentage, '%');
+    </script>
+  </body>
+</html>
